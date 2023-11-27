@@ -1,25 +1,21 @@
 /* media query */
 
-@media screen and (max-width: 320px) { 
-    
+@media screen and (min-width: 320px) and (max-width: 576px) { 
+    div {
+        width: calc((100% / 10) - 4px);
+        font-size: .25rem;
+        margin: 0;
+    }
 }
 
-@media screen and (min-width: 321px) {
-    
+@media screen and (max-width: 576px) { 
+    div {
+        font-size: .35rem;
+    }
 }
 
-@media screen and (min-width: 425px) {
-    
-}
-
-@media screen and (min-width: 768px) {
-      
-}
-
-@media screen and (min-width: 1024px) {
-    
-}
-
-@media screen and (min-width: 1440px) {
-    
+@media screen and (min-width: 577px) and (max-width: 768px) { 
+    div {
+        font-size: .5rem;
+    }
 }
