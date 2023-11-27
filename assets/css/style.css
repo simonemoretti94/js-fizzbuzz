@@ -12,6 +12,11 @@
 :root {
     --black: black;
     --white: white;
+    --back-section-fizz:#083b4c;
+    --back-non-fizz-button: #1389b2;
+    --back-fizz-button: #0cd6a1;
+    --back-buzz-button: #ffd166;
+    --back-fizzbuzz-button: #f0466f;
 }
 
 /* utilities */
@@ -117,32 +122,43 @@
 
 /* fizzbuzz */
 
-.container {
-    max-width: 800px;
+main {
+    background-color: var(--back-section-fizz);
+}
+
+h1 {
+    /* color: white; */
+    font-size: 105%;
+    text-shadow: 1.5px 1px black;
+}
+
+section {
+    margin: auto;
 }
 
 div {
-    width: calc(80px - 4px);
+    width: calc((100% / 10) - 13px);
     aspect-ratio: 1;
-    border: solid 1px;
-    box-shadow: 1.5px 1px rgb(145, 145, 145);
-    font-size: .6rem;
+    border: solid 0.5px;
+    box-shadow: 1px 1px rgb(0, 0, 0);
+    font-size: .7rem;
+    font-weight: 800;
     text-align: center;
-    margin: auto 1px auto 1px;
+    margin: auto 6px auto 6px;
 }
 
 .fizzbuzz {
-    background-color: paleturquoise;
+    background-color: var(--back-fizzbuzz-button);
 }
 
 .fizz {
-    background-color: rgb(235, 163, 31);
+    background-color: var(--back-fizz-button);
 }
 
 .buzz {
-    background-color: rgb(236, 106, 236);
+    background-color: var(--back-buzz-button);
 }
 
 .keine_fizzbuzz {
-    background-color: rgb(36, 221, 36);
+    background-color: var(--back-non-fizz-button);
 }

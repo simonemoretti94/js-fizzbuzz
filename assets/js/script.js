@@ -52,20 +52,20 @@ for (let i = 1; i <= 100; i++) {
         console.log(vettore[i]);
 
         div_fizzbuzz.classList.add('fizzbuzz');
-        div_fizzbuzz.innerText = i + ' FizzBuzz!';
+        div_fizzbuzz.innerText ='FizzBuzz!';
     }
     else if (i % 3 === 0) {
         console.log(i, ': Fizz');
 
         div_fizzbuzz.classList.add('fizz');
-        div_fizzbuzz.innerText = i + ' Fizz!';
+        div_fizzbuzz.innerText ='Fizz!';
     }
 
     else if (i % 5 === 0) {
         console.log(i, ': Buzz');
 
         div_fizzbuzz.classList.add('buzz');
-        div_fizzbuzz.innerText = i + ' Buzz!';
+        div_fizzbuzz.innerText ='Buzz!';
     }
     else {
         console.log(i);
